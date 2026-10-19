@@ -1,4 +1,4 @@
-# git-auto functions - - - - - - - - - - - - - - - - - - - - 
+# git-auto functions
 _git_auto() {
   local mode="${1:-}"
   shift || true
@@ -180,4 +180,3 @@ git-commit-auto() {
 git-push-auto() {
   _git_auto git-push-auto "$@"
 }
-# - - - - - - - - - - - - - - - - - - - - 
