@@ -31,7 +31,7 @@ if [[ "$marker_status" == "none" ]]; then
   echo "git-auto is not installed in $BASHRC. No changes were made."
   exit 0
 fi
-[[ "$marker_status" == "one" ]] || die "Found duplicate or unmatched git-auto markers in $BASHRC. No changes were made; inspect the file manually."
+[[ "$marker_status" == "one" ]] || die "Found duplicate or unmatched 'git-auto' markers in $BASHRC. No changes were made; inspect the file manually."
 
 umask 077
 TEMP_FILE="$(mktemp "${BASHRC}.git-auto.XXXXXX")" || die "Could not create temporary file."
