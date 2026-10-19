@@ -81,5 +81,5 @@ TEMP_FILE=""
 printf 'git-auto installed successfully.\n'
 printf 'Updated: %s\nBackup:  %s\n' "$BASHRC" "$BACKUP_FILE"
 printf '\nThe current parent shell cannot be changed by an executed child script.\n'
-printf 'To load the commands in this terminal now, run:\n  source %q\n' "$BASHRC"
+printf 'To load the commands in this terminal now, run: source %s\n' "$BASHRC"
 printf 'New Bash terminals will load the functions automatically.\n'
